@@ -3,7 +3,7 @@ clear all; close all; clc;
 om=1;
 T=2*pi/om;
 
-N0=1E3;
+N0=1E5;
 N10=N0/4; N20=N0/2;
 tau1=T/4; tau2=T/2;
 beta10=tau1; beta20=tau2;
@@ -578,4 +578,5 @@ figure;
 set(gcf,'color','w');
 plot(linspace(0,1,length(width_tot)),width_tot,'.-k'); xlim([0 1]); ylim([0 0.2]);
 xlabel('$t/T$','interpreter','latex','fontsize',20);
+
 ylabel('$\sigma(t)$','interpreter','latex','fontsize',20);
