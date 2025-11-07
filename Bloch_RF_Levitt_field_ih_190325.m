@@ -3,7 +3,7 @@ clear all; close all; clc;
 om=1;
 T=2*pi/om;
 
-N0=1E3;
+N0=1E5;
 N10=N0/4; N20=N0/2;
 tau1=T/4; tau2=T/2;
 beta10=tau1; beta20=tau2;
@@ -671,3 +671,4 @@ Q3c=sqrt(Q3b(end)+dt.*cumsum(abs(Q2c))); qbc=Q3c(1)-Q3b_new(end); Q3c_new=Q3c-qb
 
 Q3_tot=[Q3a,Q3b_new,Q3c_new];
 plot(linspace(0,1,Q_end),Q3_tot,'.b');
+
